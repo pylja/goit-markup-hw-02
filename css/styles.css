@@ -230,7 +230,12 @@ body {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: var(--accent-color);
+  color: #f5f4fa;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: #2196F3;
 }
 
 .portfolio-title {

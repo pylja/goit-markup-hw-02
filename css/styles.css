@@ -3,14 +3,13 @@
   --second-text-color: #212121;
   --fourth-text-color: #ffffff;
   --accent-color: #2196f3;
-
-  --primary-title-color: #212121;
-  --second-title-color: #ffffff;
+  --button-color: #f5f4fa
+ 
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
+  background-color: var(--fourth-text-color);
 }
 
 .list {
@@ -29,11 +28,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .span-logo {
-  color: #212121;
+  color: var(--second-text-color);
 }
 
 .header-item {
@@ -44,33 +43,25 @@ body {
   color: var(--second-text-color);
 }
 .header-item:hover,
-.header-item:focus {
+.header-item:focus,
+.header-contact:hover,
+.header-contact:focus {
   color: var(--accent-color);
 }
 
-.header-mail {
+.current {
+  color: var(--accent-color)
+}
+
+.header-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
-}
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
 
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
+
 
 /* --------hero--------------- */
 
@@ -84,7 +75,11 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
 
-  color: var(--second-title-color);
+  color: var(--fourth-text-color);
+}
+
+.hero-title {
+  text-transform: uppercase;
 }
 
 /* -- button--- */
@@ -92,11 +87,12 @@ body {
 .hero-button {
   font-family: Roboto;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  border-radius: 4px;
+  border: none;
+  color: var(--fourth-text-color);
+  background-color: var(--accent-color);
 }
 
 .cursor {
@@ -123,7 +119,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--second-text-color);
+}
+
+.features-title {
+  text-transform: uppercase;
 }
 
 .features-text {
@@ -140,29 +140,33 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--second-text-color);
 }
 
 /* --------Наша команда---------- */
+
+.team {
+  background-color: #F5F4FA;
+}
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--second-text-color);
 }
 
 .team-item-name {
   font-weight: 500;
-  font-size: 16px;
+  
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: var(--second-text-color);
 }
 
 .team-item-text {
-  font-size: 16px;
+  
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -180,11 +184,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .span-logo-footer {
-  color: #ffffff;
+  color: var(--fourth-text-color);
 }
 
 .address-contacts {
@@ -208,35 +212,32 @@ body {
 }
 
 .addres-mail:hover,
-.addres-mail:focus {
-  color: var(--accent-color);
-}
-
+.addres-mail:focus,
 .addres-tel:hover,
 .addres-tel:focus {
   color: var(--accent-color);
 }
 
+
 /* -------------Портфоліо------------- */
 
 .portfolio-button {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
   color: var(--second-text-color);
   background-color: #f5f4fa;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #f5f4fa;
+  color: var(--button-color);
+  background-color: var(--accent-color);
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
-  background-color: #2196F3;
-}
 
 .portfolio-title {
   font-weight: 700;
@@ -247,7 +248,7 @@ body {
 }
 
 .portfolio-text {
-  font-size: 16px;
+  
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);

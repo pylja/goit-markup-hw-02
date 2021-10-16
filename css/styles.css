@@ -238,6 +238,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.button-active {
+  background-color: var(--accent-color);
+  color: var(--fourth-text-color);
+}
 
 .portfolio-title {
   font-weight: 700;
